@@ -8,6 +8,8 @@
 <body>
 
 <div id="app">
+<main-title></main-title>
+
 <div class="container">
     @yield('content')
 </div>
