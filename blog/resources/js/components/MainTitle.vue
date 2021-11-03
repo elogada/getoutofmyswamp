@@ -1,12 +1,9 @@
 <template>
-<div class="row">
 <div class="col-lg-12 margin-tb">
-<div class="pull-left">
-<h2>Bayani's Peripherals List</h2>
-</div>
-<div class="pull-right">
-<a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
-</div>
-</div>
-</div>
+<center><img src="https://elogada.github.io/1.gif" width="100"></img>
+<p>
+<br>
+<font face="arial" size="large"><h2>Bayani's Peripherals List</h2></font>
+</p>
+</center></div>
 </template>

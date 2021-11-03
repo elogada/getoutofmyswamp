@@ -8,13 +8,17 @@
 <body>
 
 <div id="app">
+<center>
 <main-title></main-title>
+<br>
+<contact-component></contact-component></center>
 
+<center>
 <div class="container">
     @yield('content')
 </div>
 </div>
-
-<contact-component></contact-component>
+<br>
+</center>
 </body>
 </html>
