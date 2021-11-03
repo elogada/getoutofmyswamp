@@ -1,8 +1,10 @@
 @extends('products.layout') 
 @section('content')
 
-
+<div>
 <main-title></main-title>
+<a class="btn btn-success" href="{{ route('products.create') }}"> Create New Product</a>
+</div>
 @if ($message = Session::get('success'))
 <div class="alert alert-success">
 <p>{{ $message }}</p>
