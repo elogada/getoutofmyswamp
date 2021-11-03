@@ -7,8 +7,13 @@
 <p>{{ $message }}</p>
 </div>
 @endif
-<labels-component></labels-component>
 @foreach ($products as $product)
+<tr>
+<th>No</th>
+<th>Name</th>
+<th>Details</th>
+<th width="280px">Action</th>
+</tr>  
 <tr><td>{{ ++$i }}</td>
 <td>{{ $product->name }}</td>
 <td>{{ $product->detail }}</td><td>
@@ -17,7 +22,8 @@
 <a class="btn btn-primary" href="{{ route('products.edit',$product->id) }}">Edit</a>
 @csrf
 @method('DELETE')
-<closer-component></closer-component>
+<table class="table table-bordered"> 
+<button type="submit" class="btn btn-danger">Delete</button></form></td></tr>
 @endforeach
 </table>									  
 {!! $products->links() !!}

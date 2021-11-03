@@ -15,5 +15,6 @@
 </div>
 </div>
 
+<contact-component></contact-component>
 </body>
 </html>
