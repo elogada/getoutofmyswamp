@@ -11,13 +11,24 @@
 <body>
 
 <div id="app">
+<br><br>
 <center>
-<main-title></main-title>
+<table class="table-auto border-t-2 shadow-lg">
+<tr>
+<td>
+<div>
+<center>
 <br>
+<main-title></main-title>
 <contact-component></contact-component></center>
-
+<br></center>
+</div>
+</tr>
+</td>
+</table>
+</center>
 <center>
-<div class="container">
+<div class="container shadow-lg">
     @yield('content')
 </div>
 </div>
