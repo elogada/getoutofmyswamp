@@ -3,6 +3,19 @@ Because a swamp is full of crud (wink wink)
 
 Check `/.env` for database specs
 
+Installation
+1. Make sure you have a database named `new` with credentials `lamp`:`toor` (or edit `getoutofmyswamp/blog/.env` file)
+
+2.
+
+```
+git clone https://github.com/elogada/getoutofmyswamp
+cd getoutofmyswamp/blog
+composer update --no-scripts
+php artisan key:generate
+
+```
+
 Changelog:
 0.0.2:
 	(stable) Just one blade but focus on Vue.js
