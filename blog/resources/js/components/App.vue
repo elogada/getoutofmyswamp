@@ -13,7 +13,7 @@
       <i v-else class="fa fa-sort-down"></i>
     </button>
     <input type="number" v-model="maxCookingTime" id="cooking-time-input"></input>
-    <input type="text" v-model="searchValue" placeholder="Search Recipe" id="search-input"></input>
+    <input type="text" v-model="searchValue" placeholder="Search peripherals" id="search-input"></input>
     <i class="fa fa-search"></i>
   </div>
     
