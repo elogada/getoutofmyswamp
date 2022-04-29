@@ -12,7 +12,6 @@
 
 ```
 composer update --no-scripts
-
 php artisan key:generate
 ```
 
@@ -22,40 +21,26 @@ Make sure you edit your Apache /etc/apache2/sites-available/VHOSTS.conf file pro
 
 ```
 <VirtualHost *:80>
-
-    ServerAdmin bayani@listchan.com
-
-    DocumentRoot "C:\Users\admin\Documents\getoutofmyswamp/public"
-
-    ServerName localhost
-
-    ServerAlias localhost
-
-    ##ErrorLog "logs/dummy-host.example.com-error.log"
-
-    ##CustomLog "logs/dummy-host.example.com-access.log" common
-
-    <Directory "C:\Users\admin\Documents\getoutofmyswamp/public">
-
-        Options Indexes FollowSymLinks MultiViews
-
-        AllowOverride all
-
-        Order Deny,Allow
-
-        Allow from all
-
-        Require all granted
-
-    </Directory>
-
+        ServerAdmin bayani@listchan.com
+        DocumentRoot "C:\Users\admin\Documents\getoutofmyswamp/public"
+        ServerName localhost
+        ServerAlias localhost
+        ##ErrorLog "logs/dummy-host.example.com-error.log"
+        ##CustomLog "logs/dummy-host.example.com-access.log" common
+        <Directory "C:\Users\admin\Documents\getoutofmyswamp/public">
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Order Deny,Allow
+                Allow from all
+                Require all granted
+        </Directory>
 </VirtualHost>
 ```
 
 Then make sure you do
 
 ```
-a2ensite VHOSTS.conf
+        a2ensite VHOSTS.conf
 ```
 
 ### What if I was using XAMPP?
@@ -65,20 +50,27 @@ It's much easier, just make sure you place the right directory in _DocumentRoot_
 
 ### Changelog
 
-`0.0.4` (unstable) create workflow for CI/CD prototype
+`0.0.4`
+```
+        (unstable) create workflow for CI/CD prototype
+        (stable) prepare README.md for better use
+```
 
-`0.0.3` (stable) update README
-        
+`0.0.3` 
+```
+        (stable) update README
         (unstable) place items in root folder
-
         (unstable) simplify ENV file
+```
 
-`0.0.2` (stable) Just one blade but focus on Vue.js
-        
+`0.0.2`
+```
+        (stable) Just one blade but focus on Vue.js
         (stable) Tailwind Integration
-
-`0.0.1` (stable) Start with laravel 
-        
+```
+`0.0.1`
+```
+        (stable) Start with laravel 
         (stable) Connect to mysql using lamp:toor  
-        
         (stable) Prep git repo
+```
